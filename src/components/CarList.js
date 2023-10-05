@@ -5,11 +5,33 @@ function CarList() {
         return state.cars.data;
     });
 
-    console.log(cars);
+    const handleCarDelete = (car) => {
+
+    };
+
+    const renderedCars = cars.map((car) => {
+        return (
+            <div key={car.id} className="panel">
+                <p>
+                    {car.name} - ${car.cost}
+                </p>
+                <button 
+                className="btn btn-error"
+                onClick={() => handleCarDelete(car)}
+                >
+                    Delete
+                </button>
+            </div>
+
+        )
+    })
 
     return(
 
-        <div>CarList</div>
+        <div className="car-list">
+            {renderedCars}
+            <hr />
+        </div>
     )
 }
 
