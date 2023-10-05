@@ -13,12 +13,12 @@ function CarList() {
 
     const renderedCars = cars.map((car) => {
         return (
-            <div key={car.id} className="panel">
-                <p>
+            <div key={car.id} class="p-10 flex flex-row justify-between items-center ">
+                <p class="text-base">
                     {car.name} - ${car.cost}
                 </p>
                 <button 
-                className="btn btn-error"
+                class="btn btn-error"
                 onClick={() => handleCarDelete(car)}
                 >
                     Delete

@@ -27,22 +27,22 @@ function CarForm() {
 
     return(
 
-        <div className="car-form ">
-            <h4 className="subtitle">Add Car</h4>
-            <form onSubmit={handleSubmit}>
-                <div className="field-group">
-                    <div className="field">
-                        <label className="label">Name</label>
+        <div class=" px-10 py-10 bg-base-100 shadow-xl ">
+            <h4 class="text-3xl mb-6">Add Car</h4>
+            <form class='flex justify-between' onSubmit={handleSubmit}>
+                <div class="flex mb-0">
+                    <div class="flex items-center mb-0 mr-6  ">
+                        <label class="mb-0 w-20 font-bold">Name</label>
                         <input 
-                        className="input input-bordered w-full max-w-xs"
+                        class="input input-bordered w-full max-w-xs"
                         value={name}
                         onChange={handleNameChange}/>
                     </div>
 
-                    <div className="field">
-                        <label className="label">Cost</label>
+                    <div class="flex items-center mb-0 mr-6">
+                        <label class="mb-0 w-20 font-bold">Cost</label>
                         <input 
-                        className="input input-bordered w-full max-w-xs"
+                        class="input input-bordered w-full max-w-xs"
                         value={cost || ''}
                         onChange={handleCostChange}
                         type="number"
@@ -51,8 +51,8 @@ function CarForm() {
                     </div>
 
                 </div>
-                <div className='field'>
-                    <button className="btn btn-info">Submit</button>
+                <div class='flex items-center mb-0 mr-6'>
+                    <button class="btn btn-info">Submit</button>
 
                 </div>
             </form>
