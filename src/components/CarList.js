@@ -31,7 +31,7 @@ function CarList() {
 
     return(
 
-        <div className="car-list">
+            <div class=" grid gap-2 grid-cols-0">
             {renderedCars}
             <hr />
         </div>
