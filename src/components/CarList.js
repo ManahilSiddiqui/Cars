@@ -13,8 +13,8 @@ function CarList() {
 
     const renderedCars = cars.map((car) => {
         return (
-            <div key={car.id} class="p-10 flex flex-row justify-between items-center ">
-                <p class="text-base">
+            <div key={car.id} class= "p-10 flex flex-row justify-between items-center bg-base-100 shadow-xl h-5 ">
+                <p class="text-xl font-sans">
                     {car.name} - ${car.cost}
                 </p>
                 <button 

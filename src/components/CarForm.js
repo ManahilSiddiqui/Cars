@@ -27,7 +27,7 @@ function CarForm() {
 
     return(
 
-        <div class=" px-10 py-10 bg-base-100 shadow-xl ">
+        <div class=" px-10 py-10 bg-base-100 shadow-xl">
             <h4 class="text-3xl mb-6">Add Car</h4>
             <form class='flex justify-between' onSubmit={handleSubmit}>
                 <div class="flex mb-0">

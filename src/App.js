@@ -8,7 +8,7 @@ import CarValue from './components/CarValue';
 function App() {
     return (
         
-        <div>
+        <div class="container mx-auto">
             <CarForm />
             <CarSearch />
             <CarList />
